@@ -90,10 +90,10 @@ td {
     height: 6em;
 }
 
-th, 
+th,
 td {
     text-align: center;
-    padding-block: 0.5em; 
+    padding-block: 0.5em;
     padding-inline: 0.5em;
 }
 
@@ -131,12 +131,12 @@ code {
 }
 
 nav {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    margin-inline:auto;
-    margin-bottom:1em
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 1em;
 }
 
 nav,
@@ -222,19 +222,18 @@ section > ul {
     margin-inline: 1em;
 }
 
-
 a,
 label {
     color: var(--link);
 }
 
 nav a {
-    text-decoration:none;
-    padding:.65em;
-    margin:.35em; 
-    border:var(--high) solid 2px;
-    border-radius:6px;
-    background-color:var(--screen)
+    text-decoration: none;
+    padding: 0.65em;
+    margin: 0.35em;
+    border: var(--high) solid 2px;
+    border-radius: 6px;
+    background-color: var(--screen);
 }
 
 a:hover,
@@ -253,7 +252,7 @@ a:focus > img {
 
 nav a:hover,
 nav a:focus {
-  background-color:var(--high)
+    background-color: var(--high);
 }
 
 pre > code {
