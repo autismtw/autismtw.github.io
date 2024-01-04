@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+    import { _BASE } from './+page'
+
     export let data
 </script>
 
@@ -13,7 +15,7 @@
         <h2>作者簡介</h2>
         <h3>十六</h3>
         <ul>
-            <li>姓名：江X虹</li>
+            <li>姓名：江Ｏ虹</li>
             <li>網路暱稱：十六</li>
             <li>
                 家中暱稱：「漂主」
@@ -28,7 +30,7 @@
         <ul>
             {#each data.posts as post}
                 <li>
-                    <a href={post.path}>
+                    <a href={_BASE + post.path}>
                         <code>{post.metadata.ord}</code> - {post.metadata.title}
                     </a>
                 </li>

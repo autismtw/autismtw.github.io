@@ -7,10 +7,10 @@ import { mdsvex } from 'mdsvex'
 const config = {
     kit: {
         adapter: adapter({
-            fallback: '404.html',
+            fallback: '/blog' + '/404.html',
         }),
         paths: {
-            base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+            base: '/blog',
         },
     },
     extensions: ['.svelte', '.md'],
