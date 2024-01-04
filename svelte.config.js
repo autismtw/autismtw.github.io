@@ -6,9 +6,7 @@ import { mdsvex } from 'mdsvex'
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     kit: {
-        adapter: adapter({
-            fallback: '/blog' + '/404.html',
-        }),
+        adapter: adapter({}),
         paths: {
             base: '/blog',
         },
