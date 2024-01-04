@@ -10,6 +10,8 @@
 <article>
     <section>
         <h1>{$page.error?.message}</h1>
-        <a href="/">回到主頁</a>
+        <p>
+            <a href="/">回到主頁</a>
+        </p>
     </section>
 </article>
