@@ -9,6 +9,7 @@ declare global {
         day: string
         author: string
         ord: number
+        cw: string?
     }
 
     namespace App {

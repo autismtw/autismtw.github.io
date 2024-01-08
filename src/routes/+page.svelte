@@ -33,6 +33,11 @@
                     <a href={post.path}>
                         <code>{post.metadata.ord}</code> - {post.metadata.title}
                     </a>
+                    <p>
+                        <strong>
+                            {post.metadata.cw != undefined ? `內文警告: ${post.metadata.cw}` : ''}
+                        </strong>
+                    </p>
                 </li>
             {/each}
         </ul>
