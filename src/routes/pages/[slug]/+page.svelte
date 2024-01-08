@@ -33,7 +33,7 @@
 <article>
     <h1>{data.title || '無題'}</h1>
     <header>
-        <p>發布時間：<code>{formatDate(data) || '未知'}</code></p>
+        <p>撰寫時間：<code>{formatDate(data) || '未知'}</code></p>
         <p>作者：{data.author || '無名'}</p>
     </header>
     <hr />
