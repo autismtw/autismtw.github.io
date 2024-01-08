@@ -1,3 +1,5 @@
+import { _BASE } from '../routes/+page'
+
 // place files you want to import through the `$lib` alias in this folder.
 export const fetchMarkdownPosts = async () => {
     const allPostFiles = import.meta.glob('/src/routes/pages/*.md')
@@ -10,7 +12,7 @@ export const fetchMarkdownPosts = async () => {
 
             return {
                 metadata: page.metadata,
-                path: postPath,
+                path: `${_BASE}${postPath}`,
             }
         }),
     )

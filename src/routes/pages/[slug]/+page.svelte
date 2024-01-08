@@ -1,11 +1,17 @@
 <script lang="ts">
     export let data
 
-    const { Content } = data
-
-    function formatDate() {
-        if (data.year && data.month && data.day) {
-            return `${data.year} / ${data.month} / ${data.day}`
+    function formatDate({
+        year,
+        month,
+        day,
+    }: {
+        year: string | undefined
+        month: string | undefined
+        day: string | undefined
+    }) {
+        if (year && month && day) {
+            return `${year} / ${month} / ${day}`
         }
     }
 
@@ -27,11 +33,11 @@
 <article>
     <h1>{data.title || '無題'}</h1>
     <header>
-        <p>發布時間：<code>{formatDate() || '未知'}</code></p>
+        <p>發布時間：<code>{formatDate(data) || '未知'}</code></p>
         <p>作者：{data.author || '無名'}</p>
     </header>
     <hr />
     <section>
-        <Content />
+        <svelte:component this={data.content} />
     </section>
 </article>

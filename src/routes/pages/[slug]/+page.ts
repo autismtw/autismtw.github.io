@@ -3,7 +3,7 @@ import { _BASE } from '../../+page'
 
 export async function load({ fetch, params }) {
     const post = await import(`../${params.slug}.md`)
-    const Content = post.default as ComponentType
+    const content = post.default as ComponentType
 
     const metadata = post.metadata as PageMeta
 
@@ -20,7 +20,7 @@ export async function load({ fetch, params }) {
     return {
         next,
         prev,
-        Content,
+        content,
         ...metadata,
     }
 }

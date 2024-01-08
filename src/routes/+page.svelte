@@ -30,7 +30,7 @@
         <ul>
             {#each data.posts as post}
                 <li>
-                    <a href={_BASE + post.path}>
+                    <a href={post.path}>
                         <code>{post.metadata.ord}</code> - {post.metadata.title}
                     </a>
                 </li>
