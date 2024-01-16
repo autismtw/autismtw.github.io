@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { _BASE } from './+page'
-
     export let data
 </script>
 

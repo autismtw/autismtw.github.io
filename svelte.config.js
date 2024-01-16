@@ -7,9 +7,6 @@ import { mdsvex } from 'mdsvex'
 const config = {
     kit: {
         adapter: adapter({}),
-        paths: {
-            base: '/blog',
-        },
     },
     extensions: ['.svelte', '.md'],
     preprocess: [

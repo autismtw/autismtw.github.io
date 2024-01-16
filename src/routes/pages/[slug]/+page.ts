@@ -1,8 +1,7 @@
 import type { ComponentType } from 'svelte'
-import { _BASE } from '../../+page'
 
 export async function load({ fetch, params }) {
-    const posts = (await (await fetch(`${_BASE}/api/posts`)).json()) as {
+    const posts = (await (await fetch('/api/posts')).json()) as {
         metadata: PageMeta
         path: string
     }[]
