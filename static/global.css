@@ -270,3 +270,14 @@ pre {
     margin-inline: auto;
     max-width: 95%;
 }
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#traffic-counter {
+    border: 1px solid var(--header);
+}
